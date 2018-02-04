@@ -11,7 +11,6 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
 
-
 import com.example.kkkk.helloworld.Activity.ChatActivity;
 import com.example.kkkk.helloworld.Activity.MainActivity;
 import com.example.kkkk.helloworld.db.DemoDBManager;
@@ -36,13 +35,9 @@ import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMConferenceStream;
 import com.hyphenate.chat.EMGroup;
 import com.hyphenate.chat.EMMessage;
-import com.hyphenate.chat.EMMessage.ChatType;
-import com.hyphenate.chat.EMMessage.Status;
-import com.hyphenate.chat.EMMessage.Type;
 import com.hyphenate.chat.EMMucSharedFile;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.chat.EMTextMessageBody;
-
 import com.hyphenate.easeui.EaseUI;
 import com.hyphenate.easeui.EaseUI.EaseEmojiconInfoProvider;
 import com.hyphenate.easeui.EaseUI.EaseSettingsProvider;
@@ -392,7 +387,7 @@ public class DemoHelper {
                     String chatUsename = null;
                     List<String> notNotifyIds = null;
                     // get user or group id which was blocked to show message notifications
-                    if (message.getChatType() == ChatType.Chat) {
+                    if (message.getChatType() == EMMessage.ChatType.Chat) {
                         chatUsename = message.getFrom();
                         notNotifyIds = demoModel.getDisabledIds();
                     } else {
@@ -447,7 +442,7 @@ public class DemoHelper {
             public String getDisplayedText(EMMessage message) {
             	// be used on notification bar, different text according the message type.
                 String ticker = EaseCommonUtils.getMessageDigest(message, appContext);
-                if(message.getType() == Type.TXT){
+                if(message.getType() == EMMessage.Type.TXT){
                     ticker = ticker.replaceAll("\\[.{2,3}\\]", "[表情]");
                 }
                 EaseUser user = getUserInfo(message.getFrom());
@@ -481,14 +476,14 @@ public class DemoHelper {
                 }else if(isVoiceCalling){
                     //intent = new Intent(appContext, VoiceCallActivity.class);
                 }else{
-                    ChatType chatType = message.getChatType();
-                    if (chatType == ChatType.Chat) { // single chat message
+                    EMMessage.ChatType chatType = message.getChatType();
+                    if (chatType == EMMessage.ChatType.Chat) { // single chat message
                         intent.putExtra("userId", message.getFrom());
                         intent.putExtra("chatType", Constant.CHATTYPE_SINGLE);
                     } else { // group chat message
                         // message.getTo() is the group id
                         intent.putExtra("userId", message.getTo());
-                        if(chatType == ChatType.GroupChat){
+                        if(chatType == EMMessage.ChatType.GroupChat){
                             intent.putExtra("chatType", Constant.CHATTYPE_GROUP);
                         }else{
                             intent.putExtra("chatType", Constant.CHATTYPE_CHATROOM);
@@ -768,13 +763,13 @@ public class DemoHelper {
 
             String st4 = appContext.getString(R.string.Agreed_to_your_group_chat_application);
             // your application was accepted
-            EMMessage msg = EMMessage.createReceiveMessage(Type.TXT);
-            msg.setChatType(ChatType.GroupChat);
+            EMMessage msg = EMMessage.createReceiveMessage(EMMessage.Type.TXT);
+            msg.setChatType(EMMessage.ChatType.GroupChat);
             msg.setFrom(accepter);
             msg.setTo(groupId);
             msg.setMsgId(UUID.randomUUID().toString());
             msg.addBody(new EMTextMessageBody(accepter + " " +st4));
-            msg.setStatus(Status.SUCCESS);
+            msg.setStatus(EMMessage.Status.SUCCESS);
             // save accept message
             EMClient.getInstance().chatManager().saveMessage(msg);
             // notify the accept message
@@ -794,8 +789,8 @@ public class DemoHelper {
         public void onAutoAcceptInvitationFromGroup(String groupId, String inviter, String inviteMessage) {
             // got an invitation
             String st3 = appContext.getString(R.string.Invite_you_to_join_a_group_chat);
-            EMMessage msg = EMMessage.createReceiveMessage(Type.TXT);
-            msg.setChatType(ChatType.GroupChat);
+            EMMessage msg = EMMessage.createReceiveMessage(EMMessage.Type.TXT);
+            msg.setChatType(EMMessage.ChatType.GroupChat);
             msg.setFrom(inviter);
             msg.setTo(groupId);
             msg.setMsgId(UUID.randomUUID().toString());
@@ -1112,8 +1107,8 @@ public class DemoHelper {
                             case GROUP_INVITE_ACCEPT:
                                 showToast("GROUP_INVITE_ACCEPT");
                                 String st3 = appContext.getString(R.string.Invite_you_to_join_a_group_chat);
-                                EMMessage msg = EMMessage.createReceiveMessage(Type.TXT);
-                                msg.setChatType(ChatType.GroupChat);
+                                EMMessage msg = EMMessage.createReceiveMessage(EMMessage.Type.TXT);
+                                msg.setChatType(EMMessage.ChatType.GroupChat);
                                 // TODO: person, reason from ext
                                 String from = "";
                                 if (usernames != null && usernames.size() > 0) {

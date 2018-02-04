@@ -1,4 +1,4 @@
-<resources>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">维护业务</string>
     <string name="alphabet_and_number">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
 
@@ -519,4 +519,8 @@
     <string name="multi_device_group_remove_mute">将%s在群组中解除禁言[remote]</string>
 
     <string name="multi_device_logged_in_device_kick_item">将设备移除</string>
+
+    <string name="the_current_group_destroyed">当前群聊已被群创建者解散</string>
+    <string name="the_current_chat_room_destroyed">当前聊天室已被创建者解散</string>
+    <string name="quiting_the_chat_room">正在退出聊天室……</string>
 </resources>

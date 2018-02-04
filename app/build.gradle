@@ -12,14 +12,16 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
-        /*jackOptions {
-            enabled true
-        }*/
+    }
+
+    lintOptions {
+        disable "ResourceType"
     }
 
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
         }
     }
     buildTypes {
@@ -32,15 +34,12 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
     compile files('libs/AMap_Search_V5.0.0_20170309.jar')
     compile files('libs/AMap_Location_V3.3.0_20170118.jar')
     compile files('libs/Android_Map3D_SDK_V5.4.0_20170928.jar')
     compile 'de.hdodenhof:circleimageview:2.1.0'
-    compile files('libs/hyphenatechat_3.3.6.jar')
     compile project(':easeui')
+    compile 'com.android.support:multidex:1.0.1'
     compile files('libs/umeng-analytics-v5.2.4.jar')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:support-v4:25.3.1'
@@ -56,7 +55,11 @@ dependencies {
     compile 'com.jude:rollviewpager:1.2.9'
     compile 'cn.carbswang.android:NumberPickerView:1.0.2'
     compile 'com.jude:utils:1.2.1'
-    compile 'com.facebook.fresco:fresco:0.10.0'
+    //compile 'com.facebook.fresco:fresco:0.10.0'
+    compile('com.facebook.fresco:fresco:0.10.0') {
+        exclude group: 'com.parse.bolts',
+                module: 'bolts-android'
+    }
     compile 'com.github.1em0nsOft:LemonHello4Android:1.0.1'
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
@@ -65,6 +68,5 @@ dependencies {
     compile 'com.squareup.okhttp3:logging-interceptor:3.0.0-RC1'
     compile 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'
     compile 'com.parse:parse-android:1.13.1'
-    testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

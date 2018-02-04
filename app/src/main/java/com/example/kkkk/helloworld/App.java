@@ -16,16 +16,12 @@
 package com.example.kkkk.helloworld;
 
 import android.app.Application;
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.text.TextUtils;
+import android.support.multidex.MultiDex;
 
 import com.example.kkkk.helloworld.util.SharedPreUtil;
 import com.example.kkkk.helloworld.util.StringUtil;
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.hyphenate.chat.EMClient;
-import com.jude.utils.JActivityManager;
-import com.jude.utils.JFileManager;
 import com.jude.utils.JUtils;
 
 /**
@@ -54,7 +50,7 @@ public class App extends Application {
 
     @Override
     public void onCreate() {
-        //MultiDex.install(this);
+        MultiDex.install(this);
         super.onCreate();
         if (instance == null) {
             instance = this;
@@ -64,9 +60,9 @@ public class App extends Application {
         Fresco.initialize(this);
         JUtils.initialize(this);
         //生成文件夹
-        JFileManager.getInstance().init(this, Dir.values());
+        //JFileManager.getInstance().init(this, Dir.values());
         //aCache = ACache.get(instance);
-        registerActivityLifecycleCallbacks(JActivityManager.getActivityLifecycleCallbacks());
+        //registerActivityLifecycleCallbacks(JActivityManager.getActivityLifecycleCallbacks());
 
         //init demo helper
         DemoHelper.getInstance().init(applicationContext);

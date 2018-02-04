@@ -50,7 +50,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.MainActivity" >
+        </activity>
         <activity android:name=".Activity.loginActivity">
 
         </activity>
@@ -71,7 +72,9 @@
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="d1ae7a0bdb8465e930f8072c50f5c2af"></meta-data>
+            android:value="d1ae7a0bdb8465e930f8072c50f5c2af">
+
+        </meta-data>
 
         <activity android:name=".Activity.SignInActivity"></activity>
         <activity android:name=".Activity.BaseActivity"></activity>
@@ -124,7 +127,7 @@
         <!-- 设置环信应用的appkey -->
         <meta-data
             android:name="EASEMOB_APPKEY"
-            android:value="easemob-demo#chatdemoui" /> <!-- 1151171113178172#whywxt -->
+            android:value="1151171113178172#whywxt" /> <!--easemob-demo#chatdemoui-->
         <!-- 声明sdk所需的service -->
         <service
             android:name="com.hyphenate.chat.EMChatService"

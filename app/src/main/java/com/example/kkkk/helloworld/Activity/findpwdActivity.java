@@ -12,8 +12,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class findpwdActivity extends BaseAppActivity {
-
-
     @BindView(R.id.back)
     ImageButton back;
 
