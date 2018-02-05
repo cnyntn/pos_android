@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\EASEUI3\\HelloWorld\\easeui\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
+        "outputFile": "D:\\one_code\\pos_android\\easeui\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 219
                 },
                 "from": {
-                    "file": "D:\\EASEUI3\\HelloWorld\\easeui\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "file": "D:\\one_code\\pos_android\\easeui\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -420,7 +420,7 @@
                     "endOffset": 12973
                 },
                 "from": {
-                    "file": "D:\\EASEUI3\\HelloWorld\\easeui\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "file": "D:\\one_code\\pos_android\\easeui\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -440,7 +440,7 @@
                     "endOffset": 13058
                 },
                 "from": {
-                    "file": "D:\\EASEUI3\\HelloWorld\\easeui\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
+                    "file": "D:\\one_code\\pos_android\\easeui\\build\\intermediates\\bundles\\debug\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,

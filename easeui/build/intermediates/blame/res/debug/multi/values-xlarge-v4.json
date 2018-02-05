@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\EASEUI3\\HelloWorld\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+        "outputFile": "D:\\one_code\\pos_android\\easeui\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
         "map": [
             {
                 "to": {
@@ -125,13 +125,13 @@
                     "endOffset": 521
                 },
                 "from": {
-                    "file": "D:\\EASEUI3\\HelloWorld\\easeui\\src\\main\\res\\values-xlarge\\ease_dimens.xml",
+                    "file": "D:\\one_code\\pos_android\\easeui\\src\\main\\res\\values-xlarge\\ease_dimens.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 663,
+                        "startOffset": 682,
                         "endColumn": 52,
-                        "endOffset": 711
+                        "endOffset": 730
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 575
                 },
                 "from": {
-                    "file": "D:\\EASEUI3\\HelloWorld\\easeui\\src\\main\\res\\values-xlarge\\ease_dimens.xml",
+                    "file": "D:\\one_code\\pos_android\\easeui\\src\\main\\res\\values-xlarge\\ease_dimens.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 716,
+                        "startOffset": 736,
                         "endColumn": 53,
-                        "endOffset": 765
+                        "endOffset": 785
                     }
                 }
             }

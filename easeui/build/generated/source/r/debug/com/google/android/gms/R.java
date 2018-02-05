@@ -16,17 +16,17 @@ public final class R {
         public static int scopeUris = 0x7f0100e4;
     }
     public static final class color {
-        public static int common_google_signin_btn_text_dark = 0x7f090082;
-        public static int common_google_signin_btn_text_dark_default = 0x7f09002b;
-        public static int common_google_signin_btn_text_dark_disabled = 0x7f09002c;
-        public static int common_google_signin_btn_text_dark_focused = 0x7f09002d;
-        public static int common_google_signin_btn_text_dark_pressed = 0x7f09002e;
-        public static int common_google_signin_btn_text_light = 0x7f090083;
-        public static int common_google_signin_btn_text_light_default = 0x7f09002f;
-        public static int common_google_signin_btn_text_light_disabled = 0x7f090030;
-        public static int common_google_signin_btn_text_light_focused = 0x7f090031;
-        public static int common_google_signin_btn_text_light_pressed = 0x7f090032;
-        public static int common_google_signin_btn_tint = 0x7f090084;
+        public static int common_google_signin_btn_text_dark = 0x7f0a0082;
+        public static int common_google_signin_btn_text_dark_default = 0x7f0a002b;
+        public static int common_google_signin_btn_text_dark_disabled = 0x7f0a002c;
+        public static int common_google_signin_btn_text_dark_focused = 0x7f0a002d;
+        public static int common_google_signin_btn_text_dark_pressed = 0x7f0a002e;
+        public static int common_google_signin_btn_text_light = 0x7f0a0083;
+        public static int common_google_signin_btn_text_light_default = 0x7f0a002f;
+        public static int common_google_signin_btn_text_light_disabled = 0x7f0a0030;
+        public static int common_google_signin_btn_text_light_focused = 0x7f0a0031;
+        public static int common_google_signin_btn_text_light_pressed = 0x7f0a0032;
+        public static int common_google_signin_btn_tint = 0x7f0a0084;
     }
     public static final class drawable {
         public static int common_full_open_on_phone = 0x7f020053;
@@ -52,24 +52,24 @@ public final class R {
         public static int googleg_standard_color_18 = 0x7f02010d;
     }
     public static final class id {
-        public static int adjust_height = 0x7f0a0021;
-        public static int adjust_width = 0x7f0a0022;
-        public static int auto = 0x7f0a002b;
-        public static int dark = 0x7f0a002c;
-        public static int icon_only = 0x7f0a0028;
-        public static int light = 0x7f0a002d;
-        public static int none = 0x7f0a000e;
-        public static int normal = 0x7f0a000a;
-        public static int progressBar = 0x7f0a0064;
-        public static int radio = 0x7f0a004a;
-        public static int standard = 0x7f0a0029;
-        public static int text = 0x7f0a0069;
-        public static int text2 = 0x7f0a00c9;
-        public static int wide = 0x7f0a002a;
-        public static int wrap_content = 0x7f0a0019;
+        public static int adjust_height = 0x7f0b0021;
+        public static int adjust_width = 0x7f0b0022;
+        public static int auto = 0x7f0b002b;
+        public static int dark = 0x7f0b002c;
+        public static int icon_only = 0x7f0b0028;
+        public static int light = 0x7f0b002d;
+        public static int none = 0x7f0b000e;
+        public static int normal = 0x7f0b000a;
+        public static int progressBar = 0x7f0b0064;
+        public static int radio = 0x7f0b004a;
+        public static int standard = 0x7f0b0029;
+        public static int text = 0x7f0b0069;
+        public static int text2 = 0x7f0b00c9;
+        public static int wide = 0x7f0b002a;
+        public static int wrap_content = 0x7f0b0019;
     }
     public static final class integer {
-        public static int google_play_services_version = 0x7f0b0003;
+        public static int google_play_services_version = 0x7f0c0003;
     }
     public static final class string {
         public static int common_google_play_services_enable_button = 0x7f050013;
