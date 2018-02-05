@@ -9,7 +9,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from EaseMob Technologies.
  */
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;

@@ -1,4 +1,4 @@
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.example.kkkk.helloworld.App;

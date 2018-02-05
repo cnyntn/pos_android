@@ -1,12 +1,10 @@
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
-import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
@@ -18,11 +16,8 @@ import com.example.kkkk.helloworld.R;
 import com.example.kkkk.helloworld.adapter.TablayoutAdapter;
 import com.example.kkkk.helloworld.util.ExitUtils;
 import com.hyphenate.EMMessageListener;
-import com.hyphenate.chat.EMChatManager;
 import com.hyphenate.chat.EMClient;
-import com.hyphenate.chat.EMCmdMessageBody;
 import com.hyphenate.chat.EMMessage;
-import com.jude.utils.JActivityManager;
 
 import java.util.ArrayList;
 import java.util.List;

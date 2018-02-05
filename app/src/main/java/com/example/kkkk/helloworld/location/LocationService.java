@@ -6,7 +6,7 @@ import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
-import com.example.kkkk.helloworld.Activity.MainActivity;
+import com.example.kkkk.helloworld.activity.MainActivity;
 
 /**
  * 包名： com.amap.locationservicedemo

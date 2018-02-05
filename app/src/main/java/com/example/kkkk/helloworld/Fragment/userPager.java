@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.kkkk.helloworld.Activity.settingActivity;
-import com.example.kkkk.helloworld.Activity.userinfoActivity;
+import com.example.kkkk.helloworld.activity.settingActivity;
+import com.example.kkkk.helloworld.activity.userinfoActivity;
 import com.example.kkkk.helloworld.R;
 
 import butterknife.BindView;

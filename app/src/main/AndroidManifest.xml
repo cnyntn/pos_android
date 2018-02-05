@@ -33,7 +33,7 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
         android:name=".App"
@@ -43,48 +43,82 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppBaseTheme">
-        <activity android:name=".Activity.SplashActiivty">
+        <activity
+            android:name=".activity.SplashActiivty"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MainActivity" >
-        </activity>
-        <activity android:name=".Activity.loginActivity">
-
-        </activity>
-        <activity android:name=".Activity.findpwdActivity" />
-        <activity android:name=".Activity.userinfoActivity">
-
-        </activity>
-        <activity android:name=".Activity.settingActivity" />
-        <activity android:name=".Activity.noticeActivity" />
-        <activity android:name=".Activity.noticedetailActivity" />
-        <activity android:name=".Activity.sendnoticeActivity" />
-        <activity android:name=".Activity.NowTaskActivity" />
-        <activity android:name=".Activity.TaskDetailActivity" />
-        <activity android:name=".Activity.DoTaskActivity">
-
-        </activity>
-        <activity android:name=".Activity.UserSaetActivity" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.loginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.findpwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.userinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.settingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noticedetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sendnoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NowTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TaskDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DoTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserSaetActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="d1ae7a0bdb8465e930f8072c50f5c2af">
+            android:value="d1ae7a0bdb8465e930f8072c50f5c2af" />
 
-        </meta-data>
-
-        <activity android:name=".Activity.SignInActivity"></activity>
-        <activity android:name=".Activity.BaseActivity"></activity>
-        <activity android:name=".Activity.ChatActivity"></activity>
-        <activity android:name=".Activity.ContextMenuActivity"></activity>
-        <activity android:name=".Activity.ImageGridActivity"></activity>
-        <activity android:name=".Activity.RecorderVideoActivity"></activity>
-        <activity android:name=".Activity.CallActivity"></activity>
-        <activity android:name=".Activity.VoiceCallActivity"></activity>
-        <activity android:name=".Activity.VideoCallActivity"></activity>
+        <activity
+            android:name=".activity.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ContextMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ImageGridActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RecorderVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VoiceCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VideoCallActivity"
+            android:screenOrientation="portrait" />
         <!-- 显示下载大图页面 -->
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
@@ -100,19 +134,19 @@
             android:name=".location.LocationService"
             android:process=":remote1">
             <intent-filter>
-                <action android:name="com.example.kkkk.helloworld.location.LocationService"></action>
+                <action android:name="com.example.kkkk.helloworld.location.LocationService" />
             </intent-filter>
         </service>
         <service
             android:name=".location.LocationHelperService"
             android:process=":remote2">
             <intent-filter>
-                <action android:name="com.example.kkkk.helloworld.location.LocationHelperService"></action>
+                <action android:name="com.example.kkkk.helloworld.location.LocationHelperService" />
             </intent-filter>
         </service>
 
         <!-- 定位需要的服务 -->
-        <service android:name="com.amap.api.location.APSService"></service>
+        <service android:name="com.amap.api.location.APSService" />
 
         <!-- 开机自启动服务 -->
         <receiver android:name=".receiver.StartServiceReceiver">
@@ -152,7 +186,9 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Activity.BaseAppActivity"></activity>
+        <activity
+            android:name=".activity.BaseAppActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

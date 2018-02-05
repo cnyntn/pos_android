@@ -1,4 +1,4 @@
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

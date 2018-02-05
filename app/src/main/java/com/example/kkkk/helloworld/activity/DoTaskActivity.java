@@ -1,4 +1,4 @@
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -33,7 +33,6 @@ import com.example.kkkk.helloworld.App;
 import com.example.kkkk.helloworld.R;
 import com.example.kkkk.helloworld.adapter.ItemAdapter;
 import com.example.kkkk.helloworld.http.RetrofitHttp;
-import com.example.kkkk.helloworld.location.PositionInfo;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
 import net.lemonsoft.lemonhello.LemonHello;

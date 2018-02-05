@@ -28,7 +28,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
-import com.example.kkkk.helloworld.Activity.RecorderVideoActivity;
+import com.example.kkkk.helloworld.activity.RecorderVideoActivity;
 import com.example.kkkk.helloworld.R;
 import com.example.kkkk.helloworld.domain.VideoEntity;
 import com.example.kkkk.helloworld.util.ImageCache;

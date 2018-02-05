@@ -12,7 +12,7 @@
  * limitations under the License.
  */
 
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

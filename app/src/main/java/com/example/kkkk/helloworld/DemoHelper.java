@@ -11,8 +11,8 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.kkkk.helloworld.Activity.ChatActivity;
-import com.example.kkkk.helloworld.Activity.MainActivity;
+import com.example.kkkk.helloworld.activity.ChatActivity;
+import com.example.kkkk.helloworld.activity.MainActivity;
 import com.example.kkkk.helloworld.db.DemoDBManager;
 import com.example.kkkk.helloworld.db.InviteMessgeDao;
 import com.example.kkkk.helloworld.db.UserDao;

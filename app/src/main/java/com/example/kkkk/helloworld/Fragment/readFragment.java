@@ -15,15 +15,13 @@ import android.widget.Toast;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.example.kkkk.helloworld.Activity.noticedetailActivity;
+import com.example.kkkk.helloworld.activity.noticedetailActivity;
 import com.example.kkkk.helloworld.App;
 import com.example.kkkk.helloworld.R;
 import com.example.kkkk.helloworld.adapter.readGridAdapter;
 import com.example.kkkk.helloworld.http.RetrofitHttp;
-import com.example.kkkk.helloworld.starItem;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;

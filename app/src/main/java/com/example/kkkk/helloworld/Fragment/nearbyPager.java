@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.example.kkkk.helloworld.Activity.UserSaetActivity;
+import com.example.kkkk.helloworld.activity.UserSaetActivity;
 import com.example.kkkk.helloworld.R;
 import com.example.kkkk.helloworld.adapter.NearbyGridAdapter;
 

@@ -1,4 +1,4 @@
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.content.Intent;
 import android.os.Bundle;

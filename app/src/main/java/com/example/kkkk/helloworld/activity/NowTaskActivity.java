@@ -1,8 +1,7 @@
-package com.example.kkkk.helloworld.Activity;
+package com.example.kkkk.helloworld.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,7 +16,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.example.kkkk.helloworld.App;
 import com.example.kkkk.helloworld.R;
 import com.example.kkkk.helloworld.adapter.nowtaskAdapter;
-import com.example.kkkk.helloworld.adapter.readGridAdapter;
 import com.example.kkkk.helloworld.http.RetrofitHttp;
 
 import java.io.IOException;

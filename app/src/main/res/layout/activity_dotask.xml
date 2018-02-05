@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:background="@color/bg_color"
-    tools:context="com.example.kkkk.helloworld.Activity.DoTaskActivity">
+    tools:context="com.example.kkkk.helloworld.activity.DoTaskActivity">
     <RelativeLayout style="@style/topbar_bg">
         <ImageButton
             android:id="@+id/back"
@@ -62,7 +62,7 @@
             android:layout_marginBottom="22.7dp"
             android:background="@color/text_while">
 
-            <com.example.kkkk.helloworld.Activity.MyGridView
+            <com.example.kkkk.helloworld.activity.MyGridView
                 android:id="@+id/grid_"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -70,7 +70,7 @@
                 android:numColumns="2"
                 android:scrollbars="none">
 
-            </com.example.kkkk.helloworld.Activity.MyGridView>
+            </com.example.kkkk.helloworld.activity.MyGridView>
 
         </LinearLayout>
 
